@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- THW redesign as HTML 5 --> 
+<html lang="en" ng-app >
+<head>
+<meta charset="UTF-8" />
+<title>Salon 117: SCHED APPT </title>
+  <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.timeentry.min.js"></script>
+    <script src="js/schedappt.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/thwstyles.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.timeentry.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+            $('#apptTime').timeEntry({ defaultTime: '11:30AM', spinnerImage: 'images/spinnerGem.png' });
+        });
+</script>
+</head>
+
+<!--BODY STARTS -->
+
+<body style="background: url(images/S117_bk_image1.jpg) no-repeat scroll center top;> <!-- background-color:#000000"> -->
+<!-- WRAPPER BEGIN - houses background images -->
+<div id="container">
+  <!-- HEADER BEGIN --> 
+ <head id="mr_header">
+  <div class="mr_headerColL"><a href="index.html"><img src="images/S117_logo.png" alt="Salon One Seventeen" width="375" height="162" border="0" /></a></div>
+  <nav role="navigation" class=""mr_headerColR"">
+    <!-- <div class="mr_headerColR"> -->
+     <p class="mr_headerColR_text"><a href="team_members.html">TEAM MEMBERS</a>
+     &nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;<a href="services.html">SERVICES</a>
+     &nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;<a href="products.html">PRODUCTS</a>
+     &nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;<a href="contact.html">CONTACT</a>
+     &nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;<a href="schedappt.html">SCHEDULE APPT</a>
+     </p>
+    <!-- </div>  -->
+  </nav>
+ </head> 
+</div>
+ <!-- FORM -->
+<header>    
+ <h2>Schedule Appointment</h2>
+ </header>
+    
+ <form>
+   <fieldset>
+     <ul >
+        <li> 
+            <label class="contacts-form" for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required="required"
+             />
+        </li>
+        <li> 
+            <label class="contacts-form" for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"
+             />
+        </li>
+        <li> 
+            <label class="contacts-form" for="phoneNumber">Phone:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber"  required="required"
+                placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4} maxlength=12"
+             />
+        </li>
+        <li> 
+            <label class="contacts-form" for="email">Email:</label>
+            <input type="email" id="email" name="email"
+             />
+        </li>
+        <li> 
+            <label class="contacts-form" for="apptdt">Appointment Date:</label>
+            <input type="date" id="apptdt" name="apptdt"  required="required" min="2013-08-08"
+             />
+        </li>
+         <li> 
+            <label class="contacts-form" for="apptTime">Appointment Time:</label>
+            <input type="text" id="apptTime" name="apptTime"  required="required" title="Time"
+             />
+        </li>
+        <li> 
+            <label class="contacts-form" for="stylist">Stylist:</label>
+            <select type="text" id="stylist" name="stylist">
+              <option>Debbie - Owner</option>
+                <option value ="Debbie Mott">Debbie Mott</option>
+                <option value ="Lynda">Lynda</option>
+                <option value ="Natalie">Natalie</option>
+                <option value ="Stacey">Stacey</option>
+                <option value ="Stephanie">Stephanie</option>
+            </select>
+        </li>
+         <li>
+             <label for="treatment">Treatment:</label>
+            <input class="contacts-form" type="text" id="treatment" name="treatment" ng-model='appt.treatment'
+             />
+         </li>
+        
+     </ul>
+       <div >
+       
+       <button type="reset" value="Reset">Clear Form</button>
+       <button id="btnSave" name="save">Schedule Appointment</button> 
+      </div>  
+    </fieldset>  
+ </form>
+    <a href="viewappts.html" class="link1">View Appts</a>
+<!-- FOOTER -->
+ <footer>
+	<div class="boilerinside_text">&copy; THW 2013 Salon One Seventeen All rights reserved.</div>
+ </footer>
+ 
+<!-- WRAPPER ENDS -->
+</body>
+</html>
