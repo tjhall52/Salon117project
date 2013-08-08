@@ -1,0 +1,8 @@
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\bin\salon117.dll
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\bin\salon117.pdb
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\bin\salon117.xml
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\obj\Debug\salon117.Resources.resources
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\obj\Debug\salon117.vbproj.GenerateResource.Cache
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\obj\Debug\salon117.dll
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\obj\Debug\salon117.xml
+c:\users\tracey\documents\visual studio 2012\Projects\salon117Solution\salon117\obj\Debug\salon117.pdb
